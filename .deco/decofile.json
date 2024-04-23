@@ -160,37 +160,15 @@
   "Carousel - 01": {
     "images": [
       {
-        "alt": "/feminino",
+        "alt": "Conexões Culturais",
         "action": {
-          "href": "https://www.deco.cx/",
-          "label": "deco.cx",
-          "title": "VTEX Store",
-          "subTitle": "Visit our site and start building now:"
+          "href": "/",
+          "label": "DESCUBRA",
+          "title": "A loja não apenas oferece produtos únicos, mas também busca criar uma plataforma interativa onde as pessoas possam aprender, compartilhar e se conectar por meio de experiências culturais significativas.",
+          "subTitle": "Descubra mais sobre nós"
         },
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368",
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/96e58473-71aa-4419-af42-7d1a3d66b1ae"
-      },
-      {
-        "alt": "/feminino",
-        "action": {
-          "href": "https://www.deco.cx/",
-          "label": "deco.cx",
-          "title": "VTEX Store",
-          "subTitle": "Visit our site and start building now:"
-        },
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0",
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9"
-      },
-      {
-        "alt": "/feminino",
-        "action": {
-          "href": "https://www.deco.cx/",
-          "label": "deco.cx",
-          "title": "VTEX Store",
-          "subTitle": "Visit our site and start building now:"
-        },
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19",
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8004/2c27d704-57ba-4af5-a1f0-a860d374c992",
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8004/72ccbac6-35e3-4b34-94f9-84040c59f22d"
       }
     ],
     "preload": true,
@@ -1587,14 +1565,12 @@
       "freeShippingObjectiveQuantity": 600
     },
     "logo": {
-      "alt": "Glamour logo by deco",
+      "alt": "Conexões Culturais",
       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
       "width": 100,
       "height": 16
     },
-    "alerts": [
-      "Use this template to create your store at deco.cx"
-    ],
+    "alerts": [],
     "navItems": {
       "__resolveType": "navbar"
     },
@@ -1609,14 +1585,19 @@
         },
         "__resolveType": "resolved"
       },
-      "placeholder": "What are you looking for?"
+      "placeholder": "O que deseja buscar?"
     },
     "suggestions": {
       "products": [],
       "searches": []
     },
-    "logoPosition": "center",
-    "__resolveType": "site/sections/Header/Header.tsx"
+    "logoPosition": "left",
+    "__resolveType": "site/sections/Header/Header.tsx",
+    "buttons": {
+      "hideSearchButton": true,
+      "hideAccountButton": true,
+      "hideWishlistButton": true
+    }
   },
   "Image Gallery - 01": {
     "title": "New collections",
@@ -2585,116 +2566,16 @@
   "navbar": {
     "items": [
       {
-        "url": "/feminino",
-        "name": "Feminino",
-        "@type": "SiteNavigationElement",
-        "image": [
-          {
-            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7733d479-0fd1-4f33-bed9-6f9e170655d6",
-            "@type": "ImageObject"
-          }
-        ],
-        "children": [
-          {
-            "url": "/feminino/saias",
-            "name": "Novidades",
-            "@type": "SiteNavigationElement",
-            "children": [
-              {
-                "url": "/feminino/vestidos",
-                "name": "Mais vendidos",
-                "@type": "SiteNavigationElement"
-              },
-              {
-                "url": "/feminino/vestidos",
-                "name": "Parcerias",
-                "@type": "SiteNavigationElement"
-              }
-            ]
-          }
-        ]
+        "children": [],
+        "image": [],
+        "name": "Quem Somos",
+        "url": "/quem-somos"
       },
       {
-        "url": "/masculino",
-        "name": "Masculino",
-        "@type": "SiteNavigationElement",
-        "image": [
-          {
-            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/575c3b0f-1a2e-4ecb-aaad-532671dc553d",
-            "@type": "ImageObject"
-          }
-        ],
-        "children": [
-          {
-            "url": "/masculino",
-            "name": "Novidades",
-            "@type": "SiteNavigationElement",
-            "children": [
-              {
-                "url": "/masculino",
-                "name": "Mais vendidos",
-                "@type": "SiteNavigationElement"
-              },
-              {
-                "url": "/masculino",
-                "name": "Parcerias",
-                "@type": "SiteNavigationElement"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "url": "/sale",
-        "name": "Sale",
-        "@type": "SiteNavigationElement",
-        "image": [
-          {
-            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/5e9310c0-c725-4643-ade3-f92a505bd1d6",
-            "@type": "ImageObject"
-          }
-        ],
-        "children": [
-          {
-            "url": "/feminino",
-            "name": "Feminino",
-            "@type": "SiteNavigationElement",
-            "children": [
-              {
-                "url": "/feminino",
-                "name": "Camisetas",
-                "@type": "SiteNavigationElement"
-              },
-              {
-                "url": "/feminino",
-                "name": "Camisas",
-                "@type": "SiteNavigationElement"
-              }
-            ]
-          },
-          {
-            "url": "/masculino",
-            "name": "Masculino",
-            "@type": "SiteNavigationElement",
-            "children": [
-              {
-                "url": "/masculino",
-                "name": "Camisetas",
-                "@type": "SiteNavigationElement"
-              },
-              {
-                "url": "/masculino",
-                "name": "Regatas",
-                "@type": "SiteNavigationElement"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "url": "/linktree",
-        "name": "Link Tree",
-        "@type": "SiteNavigationElement"
+        "children": [],
+        "image": [],
+        "name": "Culturas",
+        "url": "/culturas"
       }
     ],
     "__resolveType": "commerce/loaders/navbar.ts"
@@ -3304,9 +3185,6 @@
         }
       },
       {
-        "__resolveType": "Shoppable Banner - 01"
-      },
-      {
         "__resolveType": "site/sections/Category/CategoryGrid.tsx",
         "list": [
           {
@@ -3343,6 +3221,9 @@
             "textAlignment": "left"
           }
         }
+      },
+      {
+        "__resolveType": "Shoppable Banner - 01"
       },
       {
         "__resolveType": "site/sections/Product/ShelfWithImage.tsx",
@@ -3586,13 +3467,13 @@
   "site": {
     "seo": {
       "type": "website",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
-      "title": "Storefront",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8004/a3f0bde6-c562-4729-8308-2dda2b4f71c3",
+      "title": "Conexões Culturais",
       "jsonLDs": [],
       "noIndexing": false,
       "description": "Improve your page performance with deco.cx",
-      "titleTemplate": "%s | deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
+      "titleTemplate": "%s ",
+      "descriptionTemplate": "%s | Somos focados na experiência internacional em Culinária, moda e artesanato do mundo todo. Venha viajar pelo mundo sem sair de casa."
     },
     "theme": {
       "__resolveType": "Fashion theme"
@@ -3638,7 +3519,13 @@
     },
     "platform": "vtex",
     "__resolveType": "site/apps/site.ts",
-    "firstByteThresholdMS": true
+    "firstByteThresholdMS": true,
+    "abTesting": {
+      "replaces": [],
+      "includeScriptsToHead": {
+        "includes": []
+      }
+    }
   },
   "vtex-trigger": {
     "product": [
@@ -3660,5 +3547,38 @@
   },
   "weather": {
     "__resolveType": "decohub/apps/weather.ts"
+  },
+  "pages-Quem%20Somos-373066": {
+    "name": "Quem Somos",
+    "path": "/quem-somos",
+    "sections": [
+      {
+        "__resolveType": "site/sections/Content/TextWithImage.tsx",
+        "services": [
+          {
+            "placement": "right",
+            "label": "Conexões Culturais",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8004/5d03b2f8-893c-4714-8a6e-aaa8561be6cf",
+            "description": "<p>é uma loja online que busca celebrar a diversidade cultural e promover a inclusão através da venda de produtos e experiências inspiradas em diferentes culturas ao redor do Brasil.</p>"
+          }
+        ]
+      },
+      {
+        "__resolveType": "site/sections/Content/Cupom.tsx",
+        "couponCode": "PRIMEIRA10",
+        "couponDescription": "Use o cupom acima e ganhe 10% de desconto na primeira compra"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "pages-Culturas-791055": {
+    "name": "Culturas",
+    "path": "/culturas",
+    "sections": [
+      {
+        "__resolveType": "Header - 01"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
