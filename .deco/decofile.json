@@ -1568,7 +1568,8 @@
       "alt": "Conexões Culturais",
       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
       "width": 100,
-      "height": 16
+      "height": 16,
+      "href": "/"
     },
     "alerts": [],
     "navItems": {
@@ -2580,6 +2581,83 @@
     ],
     "__resolveType": "commerce/loaders/navbar.ts"
   },
+  "pages-Culturas-791055": {
+    "name": "Culturas",
+    "path": "/culturas",
+    "sections": [
+      {
+        "__resolveType": "Header - 01"
+      },
+      {
+        "__resolveType": "site/sections/Miscellaneous/Weather.tsx",
+        "temperature": {
+          "celsius": 29
+        }
+      },
+      {
+        "__resolveType": "site/sections/Miscellaneous/OnLineText.tsx",
+        "text": "Em alagoas, a cultura tem como forte os: folguedos, pastoril, guerreiros, coco de roda e muito mais. E o melhor, A CULINÁRIA"
+      },
+      {
+        "__resolveType": "site/sections/Content/Cupom.tsx",
+        "couponCode": "PRIMEIRA5",
+        "couponDescription": "COMPRE JÁ COM 5% DE DESCONTO"
+      },
+      {
+        "__resolveType": "site/sections/Images/BannerGrid.tsx",
+        "title": "A CULTURA ALAGOANA",
+        "banners": [
+          {
+            "alt": "Coco de Roda",
+            "href": "a",
+            "srcMobile": "https://cdn.gazetadealagoas.com.br/img/inline/400000/Grupos-de-coco-de-roda-se-reinventam-e-mantem-vivo0040631800.jpg?xid=601278",
+            "srcDesktop": "https://cdn.gazetadealagoas.com.br/img/inline/400000/Grupos-de-coco-de-roda-se-reinventam-e-mantem-vivo0040631800.jpg?xid=601278"
+          },
+          {
+            "alt": "a",
+            "href": "a",
+            "srcMobile": "https://holidaymaceio.com.br/wp-content/uploads/2022/01/sururunocapotenidelins.jpg",
+            "srcDesktop": "https://holidaymaceio.com.br/wp-content/uploads/2022/01/sururunocapotenidelins.jpg"
+          }
+        ],
+        "borderRadius": {
+          "mobile": "3xl",
+          "desktop": "3xl"
+        },
+        "itemsPerLine": {
+          "mobile": 2,
+          "desktop": 2
+        }
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "pages-Quem%20Somos-373066": {
+    "name": "Quem Somos",
+    "path": "/quem-somos",
+    "sections": [
+      {
+        "__resolveType": "Header - 01"
+      },
+      {
+        "__resolveType": "site/sections/Content/TextWithImage.tsx",
+        "services": [
+          {
+            "placement": "right",
+            "label": "Conexões Culturais",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8004/5d03b2f8-893c-4714-8a6e-aaa8561be6cf",
+            "description": "<p>é uma loja online que busca celebrar a diversidade cultural e promover a inclusão através da venda de produtos e experiências inspiradas em diferentes culturas ao redor do Brasil.</p>"
+          }
+        ]
+      },
+      {
+        "__resolveType": "site/sections/Content/Cupom.tsx",
+        "couponCode": "PRIMEIRA10",
+        "couponDescription": "Use o cupom acima e ganhe 10% de desconto na primeira compra"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
   "pages-aiassistant-c38e51d3049a": {
     "name": "AI Assistant",
     "path": "/ai-assistant-deco-test",
@@ -3115,37 +3193,13 @@
         ]
       },
       {
-        "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx",
-        "link": {
-          "href": "https://github.com/deco-cx",
-          "text": "Visit our GitHub"
-        },
-        "text": "<p>Design, develop and deliver complete experiences</p>",
-        "labels": {
-          "days": "days",
-          "hours": "hours",
-          "expired": " Expired!",
-          "minutes": "minutes",
-          "seconds": "seconds"
-        },
-        "layout": {
-          "textPosition": "After counter"
-        },
-        "expiresAt": "2024-03-15T17:23:00.000Z"
-      },
-      {
-        "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
-        "content": [
-          {
-            "label": "HOT SALE",
-            "repeat": 30
-          }
-        ]
-      },
-      {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "layout": {
-          "showArrows": true
+          "showArrows": true,
+          "numberOfSliders": {
+            "mobile": 1,
+            "desktop": 1
+          }
         },
         "products": {
           "props": {
@@ -3186,6 +3240,12 @@
       },
       {
         "__resolveType": "site/sections/Category/CategoryGrid.tsx",
+        "layout": {
+          "categoryCard": {
+            "textPosition": "bottom",
+            "textAlignment": "left"
+          }
+        },
         "list": [
           {
             "href": "/",
@@ -3214,72 +3274,10 @@
         ],
         "header": {
           "title": "Explore Our Categories"
-        },
-        "layout": {
-          "categoryCard": {
-            "textPosition": "bottom",
-            "textAlignment": "left"
-          }
         }
       },
       {
         "__resolveType": "Shoppable Banner - 01"
-      },
-      {
-        "__resolveType": "site/sections/Product/ShelfWithImage.tsx",
-        "image": {
-          "alt": "Collection Image",
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/165c770b-cbbc-48c0-81ad-c732d527c77c",
-          "href": "/feminino"
-        },
-        "section": {
-          "title": "Summer Vibes",
-          "layout": {
-            "showArrows": true,
-            "headerfontSize": "Normal",
-            "headerAlignment": "center",
-            "numberOfSliders": {
-              "mobile": 1,
-              "desktop": 1
-            }
-          },
-          "products": {
-            "props": {
-              "sort": "price:desc",
-              "count": 3,
-              "query": "camisa"
-            },
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-          },
-          "cardLayout": {
-            "layout": {
-              "hide": {
-                "allPrices": false,
-                "favoriteIcon": true,
-                "installments": true,
-                "productDescription": true
-              },
-              "basics": {
-                "oldPriceSize": "Normal",
-                "contentAlignment": "Left"
-              },
-              "onMouseOver": {
-                "card": "None",
-                "image": "Change image",
-                "showCta": true,
-                "showCardShadow": false,
-                "showSkuSelector": true,
-                "showFavoriteIcon": false
-              },
-              "elementsPositions": {
-                "skuSelector": "Bottom",
-                "favoriteIcon": "Top right"
-              }
-            },
-            "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
-          },
-          "__resolveType": "site/sections/Product/ProductShelf.tsx"
-        }
       },
       {
         "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
@@ -3317,8 +3315,8 @@
         }
       },
       {
-        "title": "Blogposts",
         "__resolveType": "site/sections/Content/BlogPosts.tsx",
+        "title": "Blogposts",
         "posts": [
           {
             "alt": "Item of the Summer",
@@ -3547,38 +3545,5 @@
   },
   "weather": {
     "__resolveType": "decohub/apps/weather.ts"
-  },
-  "pages-Quem%20Somos-373066": {
-    "name": "Quem Somos",
-    "path": "/quem-somos",
-    "sections": [
-      {
-        "__resolveType": "site/sections/Content/TextWithImage.tsx",
-        "services": [
-          {
-            "placement": "right",
-            "label": "Conexões Culturais",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8004/5d03b2f8-893c-4714-8a6e-aaa8561be6cf",
-            "description": "<p>é uma loja online que busca celebrar a diversidade cultural e promover a inclusão através da venda de produtos e experiências inspiradas em diferentes culturas ao redor do Brasil.</p>"
-          }
-        ]
-      },
-      {
-        "__resolveType": "site/sections/Content/Cupom.tsx",
-        "couponCode": "PRIMEIRA10",
-        "couponDescription": "Use o cupom acima e ganhe 10% de desconto na primeira compra"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
-  },
-  "pages-Culturas-791055": {
-    "name": "Culturas",
-    "path": "/culturas",
-    "sections": [
-      {
-        "__resolveType": "Header - 01"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
   }
 }
