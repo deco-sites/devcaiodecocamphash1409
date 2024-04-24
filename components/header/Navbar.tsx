@@ -38,7 +38,7 @@ function Navbar(
         <MenuButton />
         {logo && (
           <a
-            href="/"
+            href={logo.href}
             class="flex-grow inline-flex items-center justify-center"
             style={{ minHeight: navbarHeight }}
             aria-label="Store logo"

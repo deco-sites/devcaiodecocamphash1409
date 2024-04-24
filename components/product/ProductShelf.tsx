@@ -2,6 +2,7 @@ import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { SendEventOnView } from "../../components/Analytics.tsx";
 import ProductCard from "../../components/product/ProductCard.tsx";
+import HorizontalProductCard from "./HorizontalProductCard.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import Header from "../../components/ui/SectionHeader.tsx";
 import Slider from "../../components/ui/Slider.tsx";
@@ -14,6 +15,9 @@ export interface Props {
   products: Product[] | null;
   title?: string;
   description?: string;
+  animateImage?: boolean;
+  /** Largura máxima do card horizontal */
+  maxWidthCard?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
   layout?: {
     numberOfSliders?: {
       mobile?: 1 | 2 | 3 | 4 | 5;
@@ -30,6 +34,8 @@ function ProductShelf({
   title,
   description,
   layout,
+  maxWidthCard,
+  animateImage
 }: Props) {
   const id = useId();
   const platform = usePlatform();
@@ -63,14 +69,10 @@ function ProductShelf({
 
       <div
         id={id}
-        class={clx(
-          "grid",
-          layout?.showArrows && "grid-cols-[48px_1fr_48px]",
-          "px-0 md:px-5 container",
-        )}
+        // class={clx("grid",layout?.showArrows && "grid-cols-[48px_1fr_48px]","px-0 md:px-5 container",)}
+        class="flex flex-col gap-4"
       >
-        <Slider class="carousel carousel-center sm:carousel-end sm:gap-1 row-start-2 row-end-5">
-          {products?.map((product, index) => (
+        {/* <Slider class="carousel carousel-center sm:carousel-end sm:gap-1 row-start-2 row-end-5">
             <Slider.Item
               index={index}
               class={clx(
@@ -78,18 +80,21 @@ function ProductShelf({
                 slideDesktop[layout?.numberOfSliders?.desktop ?? 3],
                 slideMobile[layout?.numberOfSliders?.mobile ?? 1],
               )}
-            >
-              <ProductCard
+              > */}
+          {products?.map((product, index) => (
+              <HorizontalProductCard
                 product={product}
                 itemListName={title}
                 platform={platform}
                 index={index}
+                maxWidthCard={maxWidthCard}
+                animateImage={animateImage}
               />
-            </Slider.Item>
           ))}
-        </Slider>
+            {/* </Slider.Item>
+        </Slider> */}
 
-        {layout?.showArrows && (
+        {/* {layout?.showArrows && (
           <>
             <div class="relative block z-10 col-start-1 row-start-3">
               <Slider.PrevButton class="absolute w-12 h-12 flex justify-center items-center">
@@ -102,8 +107,8 @@ function ProductShelf({
               </Slider.NextButton>
             </div>
           </>
-        )}
-        <Slider.JS rootId={id} />
+        )} */}
+        {/* <Slider.JS rootId={id} /> */}
         <SendEventOnView
           id={id}
           event={{

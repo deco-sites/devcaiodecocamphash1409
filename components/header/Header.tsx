@@ -14,6 +14,7 @@ export interface Logo {
   alt: string;
   width?: number;
   height?: number;
+  href?: string;
 }
 export interface Buttons {
   hideSearchButton?: boolean;
@@ -73,6 +74,7 @@ function Header({
     width: 100,
     height: 16,
     alt: "Logo",
+    href: "/"
   },
   logoPosition = "center",
   buttons,
